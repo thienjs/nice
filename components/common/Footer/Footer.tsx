@@ -36,7 +36,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <span className="rounded-full border border-accent-6 mr-2">
                   <Logo />
                 </span>
-                <span>ACME</span>
+                <span>Nice Dist Co</span>
               </a>
             </Link>
           </div>
@@ -68,23 +68,9 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2022 Nice Dist Co. All rights reserved.</span>
           </div>
-          <div className="flex items-center text-primary text-sm">
-            <span className="text-primary">Created by</span>
-            <a
-              rel="noopener noreferrer"
-              href="https://vercel.com"
-              aria-label="Vercel.com Link"
-              target="_blank"
-              className="text-primary"
-            >
-              <Vercel
-                className="inline-block h-6 ml-3 text-primary"
-                alt="Vercel.com Logo"
-              />
-            </a>
-          </div>
+          
         </div>
       </Container>
     </footer>

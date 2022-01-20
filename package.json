@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-commerce",
+  "name": "nice",
   "version": "1.0.0",
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "analyze": "BUNDLE_ANALYZE=both next build",
