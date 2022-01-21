@@ -3,11 +3,11 @@
 }
 
 .title {
-  @apply text-accent-0 font-extrabold text-4xl leading-none tracking-tight;
+  @apply text-accent-9 font-extrabold text-4xl leading-none tracking-tight;
 }
 
 .description {
-  @apply mt-4 text-xl leading-8 text-accent-2 mb-1 lg:max-w-4xl;
+  @apply mt-4 text-xl leading-8 text-accent-7 mb-1 lg:max-w-4xl;
 }
 
 @screen lg {

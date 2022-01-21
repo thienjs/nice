@@ -11,15 +11,15 @@ interface HeroProps {
 
 const Hero: FC<HeroProps> = ({ headline, description }) => {
   return (
-    <div className="bg-accent-9 border-b border-t border-accent-2">
+    <div className="bg-accent-1 border-b border-t border-accent-2">
       <Container>
         <div className={s.root}>
           <h2 className={s.title}>{headline}</h2>
           <div className={s.description}>
             <p>{description}</p>
             <Link href="/">
-              <a className="flex items-center text-accent-0 pt-3 font-bold hover:underline cursor-pointer w-max-content">
-                Read it here
+              <a className="flex items-center text-accent-8 pt-3 font-bold hover:underline cursor-pointer w-max-content">
+                browse selection
                 <ArrowRight width="20" heigh="20" className="ml-1" />
               </a>
             </Link>
