@@ -4,6 +4,8 @@ import s from './Navbar.module.css'
 import NavbarRoot from './NavbarRoot'
 import { Logo, Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
+import ThemeSwitch from './ThemeSwitch'
+import { ThemeProvider } from 'next-themes'
 
 interface Link {
   href: string
@@ -40,7 +42,8 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
             <Searchbar />
           </div>
         )}
-        <div className="flex items-center justify-end flex-1 space-x-8">
+        <div className="flex items-center justify-end flex-1 space-x-3">
+          <ThemeSwitch/>
           <UserNav />
         </div>
       </div>
