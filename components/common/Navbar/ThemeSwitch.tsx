@@ -13,7 +13,7 @@ const ThemeSwitch = () => {
           checked={isDark}
           title="Theme switch"
           onChange={() => setTheme(isDark ? 'light' : 'dark')}
-          className={`inline-flex justify-center w-full  shadow-sm px-2 py-2 bg-transparent text-sm font-medium text-gray-700 dark:text-gray-200  `}
+          className={`inline-flex justify-center w-full  px-2 py-2 bg-transparent text-sm font-medium text-gray-700 dark:text-gray-200  `}
         >
           <SunMoonIcon />
         </Switch>
