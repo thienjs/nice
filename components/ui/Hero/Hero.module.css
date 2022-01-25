@@ -1,13 +1,13 @@
 .root {
-  @apply flex flex-col min-h-screen bg-cover mx-auto;
+  @apply flex flex-col min-h-screen bg-center bg-[url('/pics/powder.jpeg')];
 }
 
 .title {
-  @apply text-accent-9 font-extrabold text-4xl leading-none tracking-tight;
+  @apply text-accent-9 font-extrabold text-4xl leading-none tracking-tight px-8 pt-8;
 }
 
 .description {
-  @apply mt-4 text-xl leading-8 text-accent-7 mb-1 lg:max-w-4xl;
+  @apply mt-4 text-xl leading-8 text-accent-7 mb-1 lg:max-w-4xl px-8;
 }
 
 @screen lg {
