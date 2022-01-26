@@ -42,19 +42,19 @@
 }
 
 .header {
-  @apply transition-colors ease-in-out duration-500
-  absolute top-0 left-0 z-20 pr-16;
+  @apply transition-colors bg-primary ease-in-out duration-500 flex flex-row
+;
 }
 
 .header .name {
-  @apply pt-0 max-w-full w-full leading-extra-loose
+  @apply  mt-4 max-w-full w-full 
   transition-colors ease-in-out duration-500;
   font-size: 2rem;
   letter-spacing: 0.4px;
 }
 
 .header .name span {
-  @apply py-4 px-6 bg-primary text-primary font-bold
+  @apply pt-6 px-6 pb-10 bg-primary text-primary font-bold 
   transition-colors ease-in-out duration-500;
   font-size: inherit;
   letter-spacing: inherit;
@@ -78,7 +78,7 @@
 
 .imageContainer .productImage {
   @apply transform transition-transform duration-500
-  object-cover scale-120;
+  object-cover;
 }
 
 .root .wishlistButton {
@@ -87,7 +87,7 @@
 
 /* Variant Simple */
 .simple .header .name {
-  @apply pt-2 text-lg leading-10 -mt-1;
+  @apply text-lg  ;
 }
 
 .simple .header .price {

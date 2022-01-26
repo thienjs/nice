@@ -85,7 +85,7 @@ const ProductCard: FC<Props> = ({
                 <div>
                   <Image
                     alt={product.name || 'Product Image'}
-                    className={s.productImage}
+                    className="{s.productImage}"
                     src={product.images[0]?.url || placeholderImg}
                     height={540}
                     width={540}
