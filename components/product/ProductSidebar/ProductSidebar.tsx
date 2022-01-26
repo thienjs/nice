@@ -72,14 +72,11 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         )}
       </div>
       <div className="mt-6">
-        <Collapse title="Care">
-          This is a limited edition production run. Printing starts when the
-          drop ends.
+        <Collapse title="Caution">
+          For professional use only
         </Collapse>
-        <Collapse title="Details">
-          This is a limited edition production run. Printing starts when the
-          drop ends. Reminder: Bad Boys For Life. Shipping may take 10+ days due
-          to COVID-19.
+        <Collapse title="Safety">
+          Keep out of reach of children. Stop use if inflammation occurs.
         </Collapse>
       </div>
     </div>

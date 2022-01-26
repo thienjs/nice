@@ -168,7 +168,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
           {/* Designs */}
           <div className="relative inline-block w-full">
             <div className="lg:hidden mt-3">
-              <span className="rounded-md shadow-sm">
+              {/*<span className="rounded-md shadow-sm">
                 <button
                   type="button"
                   onClick={(e) => handleClick(e, 'brands')}
@@ -179,7 +179,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                 >
                   {activeBrand?.name
                     ? `Design: ${activeBrand?.name}`
-                    : 'All Designs'}
+                    : 'Nice Dist Co'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                     />
                   </svg>
                 </button>
-              </span>
+                  </span> */}
             </div>
             <div
               className={`origin-top-left absolute lg:relative left-0 mt-2 w-full rounded-md shadow-lg lg:shadow-none z-10 mb-10 lg:block ${
@@ -208,60 +208,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   aria-orientation="vertical"
                   aria-labelledby="options-menu"
                 >
-                  <ul>
-                    <li
-                      className={cn(
-                        'block text-sm leading-5 text-accent-4 lg:text-base lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
-                        {
-                          underline: !activeBrand?.name,
-                        }
-                      )}
-                    >
-                      <Link
-                        href={{
-                          pathname: getDesignerPath('', category),
-                          query,
-                        }}
-                      >
-                        <a
-                          onClick={(e) => handleClick(e, 'brands')}
-                          className={
-                            'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
-                          }
-                        >
-                          All Designers
-                        </a>
-                      </Link>
-                    </li>
-                    {brands.flatMap(({ node }: { node: any }) => (
-                      <li
-                        key={node.path}
-                        className={cn(
-                          'block text-sm leading-5 text-accent-4 hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
-                          {
-                            // @ts-ignore Shopify - Fix this types
-                            underline: activeBrand?.entityId === node.entityId,
-                          }
-                        )}
-                      >
-                        <Link
-                          href={{
-                            pathname: getDesignerPath(node.path, category),
-                            query,
-                          }}
-                        >
-                          <a
-                            onClick={(e) => handleClick(e, 'brands')}
-                            className={
-                              'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
-                            }
-                          >
-                            {node.name}
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+   
                 </div>
               </div>
             </div>
