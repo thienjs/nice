@@ -42,13 +42,13 @@ const ProductCard: FC<Props> = ({
       <a className={rootClassName} aria-label={product.name}>
         {variant === 'slim' && (
           <>
-            <div className={s.header}>
-              <span>{product.name}</span>
+            <div className=''>
+              <span className=''>{product.name}</span>
             </div>
             {product?.images && (
               <div>
                 <Image
-                  quality="85"
+                  quality="100"
                   src={product.images[0]?.url || placeholderImg}
                   alt={product.name || 'Product Image'}
                   height={320}
@@ -73,7 +73,7 @@ const ProductCard: FC<Props> = ({
             {!noNameTag && (
               <div className={s.header}>
                 <h3 className={s.name}>
-                  <span>{product.name}</span>
+                  <span className=''>{product.name}</span>
                 </h3>
                 <div className={s.price}>
                   {`${price} ${product.price?.currencyCode}`}
@@ -85,11 +85,11 @@ const ProductCard: FC<Props> = ({
                 <div>
                   <Image
                     alt={product.name || 'Product Image'}
-                    className="{s.productImage}"
+                    className={s.productImage}
                     src={product.images[0]?.url || placeholderImg}
                     height={540}
                     width={540}
-                    quality="85"
+                    quality="100"
                     layout="responsive"
                     {...imgProps}
                   />

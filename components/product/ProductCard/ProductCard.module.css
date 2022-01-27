@@ -7,7 +7,7 @@
 
 .root:hover {
   & .productImage {
-    transform: scale(1.2625);
+    transform: scale(1.1);
   }
 
   & .header .name span,
@@ -42,19 +42,19 @@
 }
 
 .header {
-  @apply transition-colors bg-primary ease-in-out duration-500 flex flex-row
+  @apply transition-colors ease-in-out duration-500 flex flex-row justify-between align-baseline
 ;
 }
 
 .header .name {
-  @apply  mt-4 max-w-full w-full 
+  @apply  
   transition-colors ease-in-out duration-500;
   font-size: 2rem;
   letter-spacing: 0.4px;
 }
 
 .header .name span {
-  @apply pt-6 px-6 pb-10 bg-primary text-primary font-bold 
+  @apply 
   transition-colors ease-in-out duration-500;
   font-size: inherit;
   letter-spacing: inherit;
@@ -63,8 +63,8 @@
 }
 
 .header .price {
-  @apply pt-2 px-6 pb-4 text-sm bg-primary text-accent-9
-  font-semibold inline-block tracking-wide
+  @apply pt-1
+
   transition-colors ease-in-out duration-500;
 }
 
@@ -78,7 +78,7 @@
 
 .imageContainer .productImage {
   @apply transform transition-transform duration-500
-  object-cover;
+  object-none;
 }
 
 .root .wishlistButton {
