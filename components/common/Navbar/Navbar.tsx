@@ -6,6 +6,7 @@ import { Logo, Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
 import ThemeSwitch from './ThemeSwitch'
 import { ThemeProvider } from 'next-themes'
+import NiceLogo from './NiceLogo'
 
 interface Link {
   href: string
@@ -22,10 +23,16 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
       <div className={s.nav}>
         <div className="flex items-center flex-1">
           <Link href="/">
-            <a className={s.logo} aria-label="Logo">
+            <a className={s.logo} aria-label="Nice">
               <Logo />
             </a>
           </Link>
+          <Link href="/">
+            <a className={s.logo} aria-label="Home">
+              <NiceLogo />
+            </a>
+          </Link>
+
           <nav className={s.navMenu}>
             <Link href="/search">
               <a className={s.link}>All</a>
@@ -43,7 +50,7 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
           </div>
         )}
         <div className="flex items-center justify-end flex-1 space-x-3">
-          <ThemeSwitch/>
+          <ThemeSwitch />
           <UserNav />
         </div>
       </div>

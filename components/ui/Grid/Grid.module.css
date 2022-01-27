@@ -28,7 +28,7 @@
     }
 
     & > *:nth-child(6n + 2) {
-      @apply bg-accent-8;
+      @apply bg-accent-2 ;
     }
 
     & > *:nth-child(6n + 3) {
@@ -54,11 +54,11 @@
     }
 
     & > *:nth-child(6n + 2) {
-      @apply bg-accent-8;
+      @apply bg-accent-2;
     }
 
     & > *:nth-child(6n + 3) {
-      @apply bg-pink;
+      @apply bg-pink ;
     }
 
     & > *:nth-child(6n + 6) {

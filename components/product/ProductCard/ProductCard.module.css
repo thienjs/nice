@@ -13,7 +13,7 @@
   & .header .name span,
   & .header .price,
   & .wishlistButton {
-    @apply bg-secondary text-secondary;
+    @apply bg-black text-white;
   }
 
   &:nth-child(6n + 1) .header .name span,
