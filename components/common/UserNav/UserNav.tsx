@@ -11,6 +11,7 @@ import Button from '@components/ui/Button'
 import DropdownMenu from './DropdownMenu'
 import s from './UserNav.module.css'
 import Menu from '@components/icons/Menu'
+import { FiMenu } from 'react-icons/fi'
 
 interface Props {
   className?: string
@@ -80,7 +81,7 @@ const UserNav: FC<Props> = ({ className }) => {
             }}
             aria-label="Menu"
           >
-            <Menu />
+            <FiMenu size={25} />
           </Button>
         </li>
       </ul>

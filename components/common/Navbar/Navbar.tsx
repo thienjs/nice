@@ -28,8 +28,8 @@ const Navbar: FC<NavbarProps> = ({ links }) => (
             </a>
           </Link>
           <Link href="/">
-            <a className={s.logo} aria-label="Home">
-              <NiceLogo />
+            <a className="" aria-label="Home">
+              <NiceLogo className='' />
             </a>
           </Link>
 
