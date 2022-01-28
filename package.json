@@ -23,6 +23,7 @@
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
     "@headlessui/react": "^1.4.3",
+    "@heroicons/react": "^1.0.5",
     "@react-spring/web": "^9.4.1",
     "@spree/storefront-api-v2-sdk": "^5.1.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
