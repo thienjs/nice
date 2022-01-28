@@ -3,6 +3,7 @@ import { Container } from '@components/ui'
 import { ArrowRight } from '@components/icons'
 import s from './Hero.module.css'
 import Link from 'next/link'
+import ParticlesBg from "particles-bg";
 interface HeroProps {
   className?: string
   headline: string
@@ -12,6 +13,7 @@ interface HeroProps {
 const Hero: FC<HeroProps> = ({ headline, description }) => {
   return (
     <div className="bg-accent-1 border-b border-t border-accent-2">
+      
       <div className=''>
         <div className={s.root}>
           <h2 className={s.title}>{headline}</h2>
@@ -29,5 +31,7 @@ const Hero: FC<HeroProps> = ({ headline, description }) => {
     </div>
   )
 }
+
+
 
 export default Hero

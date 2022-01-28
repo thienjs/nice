@@ -1,5 +1,5 @@
 .root {
-  @apply flex flex-col min-h-screen bg-center bg-[url('/pics/powder.jpeg')];
+  @apply flex flex-col min-h-screen bg-opacity-70 bg-gradient-to-tl from-sky-400 via-rose-400 to-lime-400;
 }
 
 .title {
