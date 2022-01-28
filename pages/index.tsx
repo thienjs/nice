@@ -12,7 +12,7 @@ export async function getStaticProps({
 }: GetStaticPropsContext) {
   const config = { locale, locales }
   const productsPromise = commerce.getAllProducts({
-    variables: { first: 6 },
+    variables: { first: 50 },
     config,
     preview,
     // Saleor provider only
@@ -39,21 +39,35 @@ export default function Home({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
-              <Hero
-                headline="Nice Co"
-                description="We strive to give beauty professionals the highest quality products at the best prices.  "
-              />
-            <Marquee variant="secondary">
-              {products.slice(0, 3).map((product: any, i: number) => (
-                <ProductCard key={product.id} product={product} variant="slim" />
-              ))}
-            </Marquee>
+    <div className=''>
+      <Hero
+        headline="Nice Co"
+        description="We strive to give beauty professionals the highest quality products at the best prices.  "
+      />
+
+
+        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <h2 className="">Products</h2>
+
+          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            {products.slice(0, 15).map((product: any, i: number) => (
+               <ProductCard key={product.id} product={product} variant="modern" />
+            ))}
+          </div>
+        </div>
+     
+
+      <Marquee variant="secondary">
+        {products.slice(16, 27).map((product: any, i: number) => (
+          <ProductCard key={product.id} product={product} variant="modern" />
+        ))}
+      </Marquee>
       <Grid variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
+        {products.slice(3, 9).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
             product={product}
+            variant="modern"
             imgProps={{
               width: i === 0 ? 1080 : 540,
               height: i === 0 ? 1080 : 540,
@@ -63,10 +77,11 @@ export default function Home({
         ))}
       </Grid>
       <Grid layout="B" variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
+        {products.slice(0, 6).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
             product={product}
+            variant="modern"
             imgProps={{
               width: i === 0 ? 1080 : 540,
               height: i === 0 ? 1080 : 540,
@@ -76,7 +91,7 @@ export default function Home({
       </Grid>
       <Marquee>
         {products.slice(3).map((product: any, i: number) => (
-          <ProductCard key={product.id} product={product} variant="slim" />
+          <ProductCard key={product.id} product={product} variant="modern" />
         ))}
       </Marquee>
       {/* <HomeAllProductsGrid
@@ -84,7 +99,7 @@ export default function Home({
         categories={categories}
         brands={brands}
       /> */}
-    </>
+    </div>
   )
 }
 

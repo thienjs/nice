@@ -25,6 +25,7 @@
     "@headlessui/react": "^1.4.3",
     "@react-spring/web": "^9.4.1",
     "@spree/storefront-api-v2-sdk": "^5.1.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@vercel/fetch": "^6.1.1",
     "autoprefixer": "^10.4.2",
     "body-scroll-lock": "^4.0.0-beta.0",
