@@ -8,6 +8,7 @@ import { Head } from '@components/common'
 import { ManagedUIContext } from '@components/ui/context'
 import { ThemeProvider } from 'next-themes'
 import { Layout } from '@components/common'
+import { ScrollToTop } from '@components/ui/scroll'
 
 const Noop: FC = ({ children }) => <>{children}</>
 
@@ -25,6 +26,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <ManagedUIContext>
           <Layout pageProps={pageProps}>
             <Component {...pageProps} />
+            <ScrollToTop/>
           </Layout>
         </ManagedUIContext>
       </ThemeProvider>

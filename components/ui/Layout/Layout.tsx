@@ -1,6 +1,6 @@
 
 
-import { ScrollToTop } from '../scroll'
+
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -12,7 +12,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       </main>
 
 
-      <ScrollToTop />
+
     </div>
   )
 }
