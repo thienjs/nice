@@ -52,8 +52,9 @@ const ProductCard: FC<Props> = ({
                   src={product.images[0]?.url || placeholderImg}
                   alt={product.name || 'Product Image'}
                   height={320}
+                  className="w-full h-full object-center object-cover group-hover:opacity-75"
                   width={320}
-                  layout="fixed"
+                  layout="responsive"
                   {...imgProps}
                 />
               </div>
@@ -85,12 +86,13 @@ const ProductCard: FC<Props> = ({
                 <div>
                   <Image
                     alt={product.name || 'Product Image'}
-                    className={s.productImage}
+                    className="{s.productImage}"
                     src={product.images[0]?.url || placeholderImg}
                     height={540}
                     width={540}
                     quality="100"
                     layout="responsive"
+
                     {...imgProps}
                   />
                 </div>
@@ -157,9 +159,7 @@ const ProductCard: FC<Props> = ({
                 </div>
               )}
             </div>
-            <h3 className="mt-4 text-sm ">
-              {product.name}
-            </h3>
+            <h3 className="mt-4 text-sm ">{product.name}</h3>
             <p className="mt-1 text-lg font-medium ">
               {price} {product?.price?.currencyCode}
             </p>
